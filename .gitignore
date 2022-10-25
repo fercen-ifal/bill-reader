@@ -1,0 +1,6 @@
+__pycache__/
+samples/
+.venv/
+
+poetry.lock
+.env
