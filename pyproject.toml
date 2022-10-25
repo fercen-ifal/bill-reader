@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bill-reader"
-version = "0.1.0"
+version = "0.1.1"
 description = "Microserviço da FERCEN para leitura de contas de energia."
 license = "GPL-3.0-only"
 authors = ["João Pedro <jpnm1@aluno.ifal.edu.br>"]
