@@ -27,7 +27,7 @@ Descrição: Esta rota recebe uma conta de energia em formato PDF e retorna o va
 Modelo de body (multipart/form-data):
 ```json
 {
-    "file": string($binary)
+    "file": "string - binário do arquivo"
 }
 ```
 Modelo de resposta:
