@@ -13,7 +13,7 @@ class ReaderResponse(BaseModel):
     month: str | None = None
 
 
-@router.post("/", response_model=ReaderResponse)
+@router.post("/", response_model=ReaderResponse, response_model_exclude_unset=True)
 async def root(response: Response, file: UploadFile):
     if file.content_type != "application/pdf":
         response.status_code = status.HTTP_415_UNSUPPORTED_MEDIA_TYPE

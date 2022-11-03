@@ -5,10 +5,10 @@ import toml
 
 load_dotenv()
 
-project_file = toml.load(Path(Path.cwd(), "pyproject.toml"))
+project_file = toml.load(Path(Path.cwd(), "..", "pyproject.toml"))
 project_data = project_file["tool"]["poetry"]
 
-CONFIG: dict[str, any] = {
+CONFIG: dict[str, any] = {  # type: ignore
     "env": os.getenv("ENV"),
     "is_dev": os.getenv("ENV") == "development",
     "is_prod": os.getenv("ENV") == "production",
